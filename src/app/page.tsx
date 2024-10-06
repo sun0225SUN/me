@@ -210,7 +210,7 @@ export default function Page() {
           </BlurFade>
         </div>
         <iframe
-          src="https://camlife.app/map?hide_controls=true"
+          src="https://camlife.cn/map?hide_controls=true"
           className="w-full h-[400px]"
           style={{ border: "none" }}
         ></iframe>

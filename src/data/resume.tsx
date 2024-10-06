@@ -25,7 +25,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "https://blog.sunguoqi.com", icon: Notebook, label: "Blog" },
-    { href: "https://camlife.app", icon: Aperture, label: "Plog" },
+    { href: "https://camlife.cn", icon: Aperture, label: "Plog" },
   ],
   contact: {
     email: "sun412926@gmail.com",
