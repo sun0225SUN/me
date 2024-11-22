@@ -80,7 +80,7 @@ h3 code {
 }
 
 pre {
-  @apply !px-0 rounded-lg overflow-x-auto py-4;
+  @apply overflow-x-auto rounded-lg !px-0 py-4;
 }
 
 pre [data-line] {
@@ -88,7 +88,7 @@ pre [data-line] {
 }
 
 code {
-  @apply text-sm md:text-base !leading-loose;
+  @apply text-sm !leading-loose md:text-base;
 }
 
 pre > code {
@@ -116,7 +116,7 @@ code[data-line-numbers] {
 code[data-line-numbers] > [data-line]::before {
   counter-increment: line;
   content: counter(line);
-  @apply inline-block w-4 mr-4 text-right text-gray-500;
+  @apply mr-4 inline-block w-4 text-right text-gray-500;
 }
 
 code {
