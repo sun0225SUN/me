@@ -51,7 +51,7 @@ export function AwesomeCard({
             <Link
               href={link.href}
               key={idx}
-              data-umami-event={link.href}
+              data-umami-event={"awesome-" + link.href}
               target="_blank"
             >
               <Badge key={idx} title={link.title} className="flex gap-2">

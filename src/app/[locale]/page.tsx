@@ -72,6 +72,7 @@ export default function Page() {
               <Link
                 href="https://rxresu.me/sunguoqi/public"
                 className="text-blue-500"
+                data-umami-event="view-my-resume"
               >
                 <u>我的简历</u>
               </Link>
@@ -267,7 +268,7 @@ export default function Page() {
                 <Link
                   href="https://camlife.cn"
                   className="text-blue-500"
-                  data-umami-event="go-camlife"
+                  data-umami-event="map-to-camlife"
                 >
                   CamLife
                 </Link>
