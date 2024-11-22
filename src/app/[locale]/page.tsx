@@ -5,7 +5,7 @@ import Markdown from "react-markdown"
 import { AwesomeCard } from "~/components/awesome-card"
 import { ProjectCard } from "~/components/project-card"
 import { ResumeCard } from "~/components/resume-card"
-import { Avatar, AvatarImage } from "~/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar"
 import { Badge } from "~/components/ui/badge"
 import BlurFade from "~/components/ui/blur-fade"
 import BlurFadeText from "~/components/ui/blur-fade-text"
@@ -46,6 +46,7 @@ export default function Page() {
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                <AvatarFallback>{DATA.name[0]}</AvatarFallback>
               </Avatar>
             </BlurFade>
           </div>
@@ -121,6 +122,7 @@ export default function Page() {
                 title={education.school}
                 subtitle={education.degree}
                 period={`${education.start} - ${education.end}`}
+                description={education.description}
               />
             </BlurFade>
           ))}

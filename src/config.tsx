@@ -104,6 +104,7 @@ const en = {
       logoUrl: "/aust.jpg",
       start: "Sep 2019",
       end: "Jun 2023",
+      description: "Have a wonderful four years",
     },
   ],
   projects: [
@@ -424,6 +425,7 @@ const zh = {
       logoUrl: "/aust.jpg",
       start: "2019.09",
       end: "2023.06",
+      description: "度过了美好的四年",
     },
   ],
   projects: [
