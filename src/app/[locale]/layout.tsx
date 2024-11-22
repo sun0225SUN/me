@@ -3,7 +3,7 @@ import { getMessages } from "next-intl/server"
 import { Inter as FontSans } from "next/font/google"
 import { notFound } from "next/navigation"
 import { Navbar } from "~/components/navbar"
-import { ThemeProvider } from "~/components/theme-provider"
+import { ThemeProvider } from "~/components/theme/provider"
 import { TooltipProvider } from "~/components/ui/tooltip"
 import { getLocaleData } from "~/config"
 import { routing } from "~/i18n/routing"
@@ -87,7 +87,7 @@ export default async function LocaleLayout({
           defer
           src="https://umami.sunguoqi.com/script.js"
           data-website-id="4edb6bc4-765f-4d86-be29-bea42752a626"
-         />
+        />
       </head>
       <body
         className={cn(

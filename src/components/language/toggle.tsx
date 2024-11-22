@@ -35,7 +35,7 @@ export function LanguageToggle() {
             onClick={() =>
               handleLocaleChange(currentLocale === "en" ? "zh" : "en")
             }
-           />
+          />
         </div>
       </TooltipTrigger>
       <TooltipContent>
