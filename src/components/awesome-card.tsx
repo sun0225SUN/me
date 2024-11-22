@@ -48,7 +48,12 @@ export function AwesomeCard({
       {links && links.length > 0 && (
         <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
           {links?.map((link, idx) => (
-            <Link href={link.href} key={idx} data-umami-event={link.href}>
+            <Link
+              href={link.href}
+              key={idx}
+              data-umami-event={link.href}
+              target="_blank"
+            >
               <Badge key={idx} title={link.title} className="flex gap-2">
                 {link.icon}
                 {link.title}

@@ -55,6 +55,7 @@ export function Navbar() {
                     className="rounded-full p-[10px] hover:bg-accent"
                     href={item.href}
                     data-umami-event={"navbar-" + item.label}
+                    target="_blank"
                   >
                     {item.icon}
                   </Link>
@@ -76,6 +77,7 @@ export function Navbar() {
                       className="rounded-full p-[10px] hover:bg-accent"
                       href={social.url}
                       data-umami-event={"navbar-" + social.name}
+                      target="_blank"
                     >
                       {social.icon}
                     </Link>
