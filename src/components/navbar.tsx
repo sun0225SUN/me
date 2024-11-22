@@ -54,7 +54,7 @@ export function Navbar() {
                   <Link
                     className="rounded-full p-[10px] hover:bg-accent"
                     href={item.href}
-                    data-umami-event={"navbar" + item.label}
+                    data-umami-event={"navbar-" + item.label}
                   >
                     {item.icon}
                   </Link>
@@ -75,7 +75,7 @@ export function Navbar() {
                     <Link
                       className="rounded-full p-[10px] hover:bg-accent"
                       href={social.url}
-                      data-umami-event={"navbar" + social.name}
+                      data-umami-event={"navbar-" + social.name}
                     >
                       {social.icon}
                     </Link>

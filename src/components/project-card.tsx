@@ -47,7 +47,7 @@ export function ProjectCard({
       }
     >
       <Link
-        data-umami-event={"card" + href}
+        data-umami-event={"card-" + href}
         href={href ?? "#"}
         className={cn("block cursor-pointer", className)}
       >
@@ -106,7 +106,7 @@ export function ProjectCard({
                 href={link?.href}
                 key={idx}
                 target="_blank"
-                data-umami-event={"badge" + link?.href}
+                data-umami-event={"badge-" + link?.href}
               >
                 <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
                   {link.icon}

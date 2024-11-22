@@ -41,7 +41,7 @@ export const ResumeCard = ({
   return (
     <Link
       href={href ?? "#"}
-      data-umami-event={"resume" + href}
+      data-umami-event={"resume-" + href}
       className="block cursor-pointer"
       onClick={handleClick}
     >
