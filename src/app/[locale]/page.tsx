@@ -66,7 +66,7 @@ export default function Page() {
           </Markdown>
           {locale === "zh" && (
             <div className="my-4 flex font-sans text-sm text-muted-foreground">
-              <div className="w-1 bg-gray-200" />
+              <div className="w-1 bg-gray-200 dark:bg-gray-700/80" />
               <span className="ml-2">创业太难了，跪求路过的老板收留，</span>
               <Link
                 href="https://rxresu.me/sunguoqi/public"
@@ -277,7 +277,7 @@ export default function Page() {
           src={`https://camlife.cn/map?hide_controls=true&lang=${locale}`}
           className="h-[400px] w-full"
           style={{ border: "none" }}
-         />
+        />
       </section>
       <section id="contact">
         <div className="grid w-full items-center justify-center gap-4 px-4 py-12 text-center md:px-6">
