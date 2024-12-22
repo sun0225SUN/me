@@ -85,9 +85,9 @@ export default async function LocaleLayout({
         <link rel="icon" href="/favicon.png" type="image/x-icon" />
         <script
           defer
-          src="https://umami.sunguoqi.com/script.js"
+          src="https://umami.guoqi.dev/script.js"
           data-website-id="4edb6bc4-765f-4d86-be29-bea42752a626"
-          data-domains="sunguoqi.com"
+          data-domains="sunguoqi.com,guoqi.dev"
         />
       </head>
       <body
