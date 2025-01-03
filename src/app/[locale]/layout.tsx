@@ -87,7 +87,7 @@ export default async function LocaleLayout({
           defer
           src="https://umami.guoqi.dev/script.js"
           data-website-id="4edb6bc4-765f-4d86-be29-bea42752a626"
-          data-domains="sunguoqi.com,guoqi.dev"
+          data-domains="guoqi.dev"
         />
       </head>
       <body

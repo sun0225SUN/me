@@ -1,3 +1,6 @@
+/* eslint-disable*/
+// @ts-nocheck
+
 "use client"
 
 import { cva, type VariantProps } from "class-variance-authority"
@@ -38,7 +41,6 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
     const renderChildren = () => {
       return React.Children.map(children, (child) => {
         if (React.isValidElement(child) && child.type === DockIcon) {
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
           return React.cloneElement(child, {
             ...child.props,
             mouseX: mouseX,

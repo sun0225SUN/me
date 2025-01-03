@@ -4,6 +4,7 @@ const config = {
   parserOptions: {
     project: true,
   },
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   plugins: ["@typescript-eslint"],
   extends: [

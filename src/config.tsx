@@ -47,7 +47,7 @@ const en = {
       },
       WeChat: {
         name: "WeChat",
-        url: "https://mp.sunguoqi.com",
+        url: "https://wechat.guoqi.dev",
         icon: <Icons.wechat className="size-full" />,
         navbar: true,
       },
@@ -84,7 +84,7 @@ const en = {
         "Do some simple software development and data processing work",
     },
     {
-      company: "NIO蔚来",
+      company: "NIO 蔚来",
       href: "https://www.nio.com",
       badges: [],
       location: "AnHui, China",
@@ -164,31 +164,6 @@ const en = {
       video: "",
     },
     {
-      title: "One Paper",
-      href: "https://onepaper.space",
-      dates: "Nov 2024 - Now",
-      active: true,
-      description:
-        "An outline note-taking mind mapping tool similar to Workflowy",
-      technologies: [
-        "Next",
-        "Supabase",
-        "Typescript",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Zustand",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://onepaper.space",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/onepaper.png",
-      video: "",
-    },
-    {
       title: "Astro Air",
       href: "https://blog.sunguoqi.com",
       dates: "Oct 2024 - Now",
@@ -234,33 +209,33 @@ const en = {
       image: "/baigua.png",
       video: "",
     },
-    {
-      title: "Photography Notes",
-      href: "https://note.camlife.cn",
-      dates: "Nov 2024 - Now",
-      active: true,
-      description: "Photography Learning Notes",
-      technologies: ["Vitepress"],
-      links: [
-        {
-          type: "Website",
-          href: "https://note.camlife.cn",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/sun0225SUN/photograph-note",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/note.png",
-      video: "",
-    },
   ],
   awesome: [
     {
+      title: "One Paper",
+      dates: "Nov 2024",
+      location: "",
+      description:
+        "An outline note-taking mind mapping tool similar to Workflowy",
+      image: "/onepaper.png",
+      mlh: "",
+      links: [
+        {
+          title: "Website",
+          type: "",
+          href: "https://onepaper.netlify.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          title: "Source",
+          href: "https://github.com/sun0225SUN/one-paper",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+    },
+    {
       title: "Star Trail",
-      dates: "Feb 7, 2024",
+      dates: "Feb, 2024",
       location: "",
       description: "Personal Homepage",
       image: "/star.png",
@@ -281,7 +256,7 @@ const en = {
     },
     {
       title: "Awesome Love Code",
-      dates: "Jan 28, 2022",
+      dates: "Jan, 2022",
       location: "",
       description: "Love Code Collection",
       image: "/love.png",
@@ -302,7 +277,7 @@ const en = {
     },
     {
       title: "Github Profile",
-      dates: "Feb 17, 2021",
+      dates: "Feb, 2021",
       location: "",
       description: "Personalized GitHub profile",
       image: "/github.png",
@@ -328,11 +303,11 @@ const zh = {
   name: "小孙同学",
   slogan: "一个浪漫的理性主义者",
   url: "https://sunguoqi.com",
-  location: "上海, 中国",
+  location: "上海，中国",
   locationLink: "https://maps.app.goo.gl/zpAabyLFYVA6fJL4A",
   description: "喜欢编程、摄影、读书、旅行、骑行，偶尔会写写文章～",
   summary:
-    "2023年毕业后, 我一直从事软件开发工作，目前正在创业中......路虽远行则将至，事虽难做则必成。我正在做一些有意义的事情，希望能成为一位名有趣的人～",
+    "2023 年毕业后，我一直从事软件开发工作，目前正在创业中......路虽远行则将至，事虽难做则必成。我正在做一些有意义的事情，希望能成为一位名有趣的人～",
   avatarUrl: "/me.png",
   tweetId: "1670252653887234048",
   skills: [
@@ -406,7 +381,7 @@ const zh = {
       description: "参与一些数据可视化项目的开发和数据处理工作",
     },
     {
-      company: "NIO蔚来",
+      company: "NIO 蔚来",
       href: "https://www.nio.com",
       badges: [],
       location: "安徽 · 合肥",
@@ -414,7 +389,8 @@ const zh = {
       logoUrl: "/nio.png",
       start: "2023.02",
       end: "2023.05",
-      description: "负责一站式数据治理与开发平台DataSight的前端开发与维护工作",
+      description:
+        "负责一站式数据治理与开发平台 DataSight 的前端开发与维护工作",
     },
   ],
   education: [
@@ -486,30 +462,6 @@ const zh = {
       video: "",
     },
     {
-      title: "One Paper",
-      href: "https://onepaper.space",
-      dates: "2024.11 - Now",
-      active: true,
-      description: "类似于 Workflowy 和幕布的大纲笔记和思维导图工具",
-      technologies: [
-        "Next",
-        "Supabase",
-        "Typescript",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Zustand",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://onepaper.space",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/onepaper.png",
-      video: "",
-    },
-    {
       title: "Astro Air",
       href: "https://blog.sunguoqi.com",
       dates: "2024.10 - Now",
@@ -555,33 +507,32 @@ const zh = {
       image: "/baigua.png",
       video: "",
     },
-    {
-      title: "摄影笔记",
-      href: "https://note.camlife.cn",
-      dates: "2024.11 - Now",
-      active: true,
-      description: "摄影学习笔记 & 知识库",
-      technologies: ["Vitepress"],
-      links: [
-        {
-          type: "Website",
-          href: "https://note.camlife.cn",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/sun0225SUN/photograph-note",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/note.png",
-      video: "",
-    },
   ],
   awesome: [
     {
+      title: "One Paper",
+      dates: "2024.11",
+      location: "",
+      description: "一个类似于 Workflowy 和幕布的大纲笔记和思维导图工具",
+      image: "/onepaper.png",
+      mlh: "",
+      links: [
+        {
+          title: "Website",
+          type: "",
+          href: "https://onepaper.netlify.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          title: "Source",
+          href: "https://github.com/sun0225SUN/one-paper",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+    },
+    {
       title: "星轨主页",
-      dates: "2024.02.07",
+      dates: "2024.02",
       location: "",
       description: "个人主页",
       image: "/star.png",
@@ -602,7 +553,7 @@ const zh = {
     },
     {
       title: "表白代码收藏馆",
-      dates: "2022.01.28",
+      dates: "2022.01",
       location: "",
       description: "收集了一些好看的表白代码",
       image: "/love.png",
@@ -623,7 +574,7 @@ const zh = {
     },
     {
       title: "Github 首页",
-      dates: "2021.02.17",
+      dates: "2021.02",
       location: "",
       description: "GitHub 自我介绍",
       image: "/github.png",
