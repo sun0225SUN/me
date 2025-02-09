@@ -27,16 +27,20 @@
 3. Install dependencies:
 
    ```bash
-   pnpm install
+   bun install
    ```
 
 4. Start the local Server:
 
    ```bash
-   pnpm dev
+   bun dev
    ```
 
 5. Open the [Config file](./src/config.tsx) and make changes
+
+## Inspired
+
+- [portfolio](https://github.com/dillionverma/portfolio)
 
 ## License
 

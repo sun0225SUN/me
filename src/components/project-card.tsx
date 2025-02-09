@@ -1,15 +1,15 @@
-import Image from "next/image"
-import Link from "next/link"
-import Markdown from "react-markdown"
-import { Badge } from "~/components/ui/badge"
+import Image from 'next/image'
+import Link from 'next/link'
+import Markdown from 'react-markdown'
+import { Badge } from '~/components/ui/badge'
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "~/components/ui/card"
-import { cn } from "~/lib/utils"
+} from '~/components/ui/card'
+import { cn } from '~/lib/utils'
 
 interface Props {
   title: string
@@ -43,13 +43,13 @@ export function ProjectCard({
   return (
     <Card
       className={
-        "flex h-full flex-col overflow-hidden border transition-all duration-300 ease-out hover:shadow-lg"
+        'flex h-full flex-col overflow-hidden border transition-all duration-300 ease-out hover:shadow-lg'
       }
     >
       <Link
-        data-umami-event={"card-" + href}
-        href={href ?? "#"}
-        className={cn("block cursor-pointer", className)}
+        data-umami-event={'card-' + href}
+        href={href ?? '#'}
+        className={cn('block cursor-pointer', className)}
       >
         {video && (
           <video
@@ -58,7 +58,7 @@ export function ProjectCard({
             loop
             muted
             playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
+            className='pointer-events-none mx-auto h-40 w-full object-cover object-top' // needed because random black line at bottom of video
           />
         )}
         {image && (
@@ -67,29 +67,29 @@ export function ProjectCard({
             alt={title}
             width={500}
             height={300}
-            className="h-40 w-full overflow-hidden object-cover object-top"
+            className='h-40 w-full overflow-hidden object-cover object-top'
           />
         )}
       </Link>
-      <CardHeader className="px-2">
-        <div className="space-y-1">
-          <CardTitle className="mt-1 text-base">{title}</CardTitle>
-          <time className="font-sans text-xs">{dates}</time>
-          <div className="hidden font-sans text-xs underline print:visible">
-            {link?.replace("https://", "").replace("www.", "").replace("/", "")}
+      <CardHeader className='px-2'>
+        <div className='space-y-1'>
+          <CardTitle className='mt-1 text-base'>{title}</CardTitle>
+          <time className='font-sans text-xs'>{dates}</time>
+          <div className='hidden font-sans text-xs underline print:visible'>
+            {link?.replace('https://', '').replace('www.', '').replace('/', '')}
           </div>
-          <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
+          <Markdown className='prose dark:prose-invert max-w-full text-pretty font-sans text-muted-foreground text-xs'>
             {description}
           </Markdown>
         </div>
       </CardHeader>
-      <CardContent className="mt-auto flex flex-col px-2">
+      <CardContent className='mt-auto flex flex-col px-2'>
         {tags && tags.length > 0 && (
-          <div className="mt-2 flex flex-wrap items-start gap-1">
+          <div className='mt-2 flex flex-wrap items-start gap-1'>
             {tags?.map((tag) => (
               <Badge
-                className="px-1 py-0 text-[10px]"
-                variant="secondary"
+                className='px-1 py-0 text-[10px]'
+                variant='secondary'
                 key={tag}
               >
                 {tag}
@@ -98,17 +98,20 @@ export function ProjectCard({
           </div>
         )}
       </CardContent>
-      <CardFooter className="px-2 pb-2">
+      <CardFooter className='px-2 pb-2'>
         {links && links.length > 0 && (
-          <div className="flex flex-row flex-wrap items-start gap-1">
-            {links?.map((link, idx) => (
+          <div className='flex flex-row flex-wrap items-start gap-1'>
+            {links?.map((link) => (
               <Link
                 href={link?.href}
-                key={idx}
-                target="_blank"
-                data-umami-event={"badge-" + link?.href}
+                key={link.href}
+                target='_blank'
+                data-umami-event={'badge-' + link?.href}
               >
-                <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
+                <Badge
+                  key={link.href}
+                  className='flex gap-2 px-2 py-1 text-[10px]'
+                >
                   {link.icon}
                   {link.type}
                 </Badge>

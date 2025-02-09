@@ -1,9 +1,9 @@
-"use server"
+'use server'
 
-import { cookies } from "next/headers"
-import { routing } from "./routing"
+import { cookies } from 'next/headers'
+import { routing } from './routing'
 
-const COOKIE_NAME = "NEXT_LOCALE"
+const COOKIE_NAME = 'NEXT_LOCALE'
 
 export async function getUserLocale() {
   return (await cookies()).get(COOKIE_NAME)?.value ?? routing.defaultLocale
